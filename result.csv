@@ -1,0 +1,176 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1749466356015,699,Get Instruction,200,OK,QA_Hillel_garage 1-1,text,true,,1509,217,2,2,https://qauto.forstudy.space/api/instructions,691,0,622
+1749466356928,147,Get Instruction,200,OK,QA_Hillel_garage 1-2,text,true,,1509,217,3,3,https://qauto.forstudy.space/api/instructions,147,0,102
+1749466357940,212,Get Instruction,200,OK,QA_Hillel_garage 1-3,text,true,,1509,217,4,4,https://qauto.forstudy.space/api/instructions,212,0,108
+1749466357718,1135,Create user,201,Created,QA_Hillel_garage 1-1,text,true,,589,381,4,4,https://qauto.forstudy.space/api/auth/signup,1135,0,0
+1749466358938,279,Get Instruction,200,OK,QA_Hillel_garage 1-4,text,true,,1509,217,5,5,https://qauto.forstudy.space/api/instructions,279,0,95
+1749466358078,1143,Create user,201,Created,QA_Hillel_garage 1-2,text,true,,585,381,5,5,https://qauto.forstudy.space/api/auth/signup,1143,0,0
+1749466359155,789,Create user,201,Created,QA_Hillel_garage 1-3,text,true,,587,381,6,6,https://qauto.forstudy.space/api/auth/signup,789,0,0
+1749466359897,52,Add Car,201,Created,QA_Hillel_garage 1-1,text,true,,538,389,6,6,https://qauto.forstudy.space/api/cars,52,0,0
+1749466359942,155,Get Instruction,200,OK,QA_Hillel_garage 1-5,text,true,,1509,217,6,6,https://qauto.forstudy.space/api/instructions,155,0,112
+1749466360223,62,Add Car,201,Created,QA_Hillel_garage 1-2,text,true,,538,385,6,6,https://qauto.forstudy.space/api/cars,62,0,0
+1749466360218,790,Create user,201,Created,QA_Hillel_garage 1-4,text,true,,591,381,7,7,https://qauto.forstudy.space/api/auth/signup,790,0,0
+1749466360953,57,Add Car,201,Created,QA_Hillel_garage 1-3,text,true,,538,387,7,7,https://qauto.forstudy.space/api/cars,57,0,0
+1749466360969,44,Get current user cars,200,OK,QA_Hillel_garage 1-1,text,true,,535,307,7,7,https://qauto.forstudy.space/api/cars,44,0,0
+1749466360939,139,Get Instruction,200,OK,QA_Hillel_garage 1-6,text,true,,1509,217,7,7,https://qauto.forstudy.space/api/instructions,139,0,98
+1749466361298,218,Get current user cars,200,OK,QA_Hillel_garage 1-2,text,true,,535,303,7,7,https://qauto.forstudy.space/api/cars,218,0,0
+1749466361109,772,Create user,201,Created,QA_Hillel_garage 1-5,text,true,,589,381,7,7,https://qauto.forstudy.space/api/auth/signup,772,0,0
+1749466362012,49,Get current user cars,200,OK,QA_Hillel_garage 1-3,text,true,,535,305,8,8,https://qauto.forstudy.space/api/cars,49,0,0
+1749466362011,53,Add Car,201,Created,QA_Hillel_garage 1-4,text,true,,538,391,8,8,https://qauto.forstudy.space/api/cars,53,0,0
+1749466362017,48,Delete car,200,OK,QA_Hillel_garage 1-1,text,true,,336,336,8,8,https://qauto.forstudy.space/api/cars/364049,48,0,0
+1749466361952,144,Get Instruction,200,OK,QA_Hillel_garage 1-7,text,true,,1509,217,8,8,https://qauto.forstudy.space/api/instructions,144,0,99
+1749466362080,771,Create user,201,Created,QA_Hillel_garage 1-6,text,true,,587,381,8,8,https://qauto.forstudy.space/api/auth/signup,771,0,0
+1749466362518,336,Delete car,200,OK,QA_Hillel_garage 1-2,text,true,,336,332,8,8,https://qauto.forstudy.space/api/cars/364050,336,0,0
+1749466362885,49,Add Car,201,Created,QA_Hillel_garage 1-5,text,true,,538,389,9,9,https://qauto.forstudy.space/api/cars,49,0,0
+1749466362942,146,Get Instruction,200,OK,QA_Hillel_garage 1-8,text,true,,1509,217,9,9,https://qauto.forstudy.space/api/instructions,146,0,104
+1749466363063,45,Delete car,200,OK,QA_Hillel_garage 1-3,text,true,,336,334,9,9,https://qauto.forstudy.space/api/cars/364051,45,0,0
+1749466363067,46,Get current user cars,200,OK,QA_Hillel_garage 1-4,text,true,,535,309,9,9,https://qauto.forstudy.space/api/cars,46,0,0
+1749466363067,50,Delete user,200,OK,QA_Hillel_garage 1-1,text,true,,449,330,9,9,https://qauto.forstudy.space/api/users,50,0,0
+1749466363098,768,Create user,201,Created,QA_Hillel_garage 1-7,text,true,,587,381,9,9,https://qauto.forstudy.space/api/auth/signup,768,0,0
+1749466363854,50,Add Car,201,Created,QA_Hillel_garage 1-6,text,true,,538,387,9,9,https://qauto.forstudy.space/api/cars,50,0,0
+1749466363856,50,Delete user,200,OK,QA_Hillel_garage 1-2,text,true,,449,326,9,9,https://qauto.forstudy.space/api/users,50,0,0
+1749466363940,45,Get current user cars,200,OK,QA_Hillel_garage 1-5,text,true,,535,307,10,10,https://qauto.forstudy.space/api/cars,45,0,0
+1749466363940,133,Get Instruction,200,OK,QA_Hillel_garage 1-9,text,true,,1509,217,10,10,https://qauto.forstudy.space/api/instructions,133,0,92
+1749466364120,379,Get Instruction,200,OK,QA_Hillel_garage 1-1,text,true,,1509,315,10,10,https://qauto.forstudy.space/api/instructions,379,0,0
+1749466364115,384,Delete car,200,OK,QA_Hillel_garage 1-4,text,true,,336,338,10,10,https://qauto.forstudy.space/api/cars/364052,384,0,0
+1749466364109,390,Delete user,200,OK,QA_Hillel_garage 1-3,text,true,,449,328,10,10,https://qauto.forstudy.space/api/users,390,0,0
+1749466364089,773,Create user,201,Created,QA_Hillel_garage 1-8,text,true,,585,381,10,10,https://qauto.forstudy.space/api/auth/signup,773,0,0
+1749466364870,51,Add Car,201,Created,QA_Hillel_garage 1-7,text,true,,538,387,10,10,https://qauto.forstudy.space/api/cars,51,0,0
+1749466364908,46,Get Instruction,200,OK,QA_Hillel_garage 1-2,text,true,,1509,311,11,11,https://qauto.forstudy.space/api/instructions,46,0,0
+1749466364907,48,Get current user cars,200,OK,QA_Hillel_garage 1-6,text,true,,535,305,11,11,https://qauto.forstudy.space/api/cars,48,0,0
+1749466364987,46,Delete car,200,OK,QA_Hillel_garage 1-5,text,true,,336,336,11,11,https://qauto.forstudy.space/api/cars/364053,46,0,0
+1749466364930,134,Get Instruction,200,OK,QA_Hillel_garage 1-10,text,true,,1509,217,11,11,https://qauto.forstudy.space/api/instructions,134,0,93
+1749466365504,349,Get Instruction,200,OK,QA_Hillel_garage 1-3,text,true,,1509,313,11,11,https://qauto.forstudy.space/api/instructions,349,0,0
+1749466365501,356,Delete user,200,OK,QA_Hillel_garage 1-4,text,true,,449,332,11,11,https://qauto.forstudy.space/api/users,356,0,0
+1749466365074,786,Create user,201,Created,QA_Hillel_garage 1-9,text,true,,587,381,11,11,https://qauto.forstudy.space/api/auth/signup,786,0,0
+1749466365943,276,Get Instruction,200,OK,QA_Hillel_garage 1-11,text,true,,1509,217,12,12,https://qauto.forstudy.space/api/instructions,276,0,94
+1749466365958,276,Delete car,200,OK,QA_Hillel_garage 1-6,text,true,,336,334,12,12,https://qauto.forstudy.space/api/cars/364054,276,0,0
+1749466365923,315,Get current user cars,200,OK,QA_Hillel_garage 1-7,text,true,,535,305,12,12,https://qauto.forstudy.space/api/cars,315,0,0
+1749466366034,207,Delete user,200,OK,QA_Hillel_garage 1-5,text,true,,449,330,12,12,https://qauto.forstudy.space/api/users,207,0,0
+1749466365864,384,Add Car,201,Created,QA_Hillel_garage 1-8,text,true,,538,385,12,12,https://qauto.forstudy.space/api/cars,384,0,0
+1749466366944,337,Get Instruction,200,OK,QA_Hillel_garage 1-12,text,true,,1509,217,13,13,https://qauto.forstudy.space/api/instructions,337,0,94
+1749466366860,422,Get Instruction,200,OK,QA_Hillel_garage 1-4,text,true,,1509,317,13,13,https://qauto.forstudy.space/api/instructions,422,0,0
+1749466365503,1787,Create user,201,Created,QA_Hillel_garage 1-1,text,true,,587,479,13,13,https://qauto.forstudy.space/api/auth/signup,1786,0,0
+1749466367243,58,Get Instruction,200,OK,QA_Hillel_garage 1-5,text,true,,1509,315,13,13,https://qauto.forstudy.space/api/instructions,58,0,0
+1749466367239,62,Delete car,200,OK,QA_Hillel_garage 1-7,text,true,,336,334,13,13,https://qauto.forstudy.space/api/cars/364055,62,0,0
+1749466367234,68,Delete user,200,OK,QA_Hillel_garage 1-6,text,true,,449,328,13,13,https://qauto.forstudy.space/api/users,68,0,0
+1749466367249,55,Get current user cars,200,OK,QA_Hillel_garage 1-8,text,true,,535,303,13,13,https://qauto.forstudy.space/api/cars,55,0,0
+1749466366861,443,Add Car,201,Created,QA_Hillel_garage 1-9,text,true,,538,387,13,13,https://qauto.forstudy.space/api/cars,443,0,0
+1749466367940,739,Get Instruction,200,OK,QA_Hillel_garage 1-13,text,true,,1509,217,14,14,https://qauto.forstudy.space/api/instructions,739,0,95
+1749466368304,405,Get Instruction,200,OK,QA_Hillel_garage 1-6,text,true,,1509,313,14,14,https://qauto.forstudy.space/api/instructions,405,0,0
+1749466368307,2120,Get current user cars,200,OK,QA_Hillel_garage 1-9,text,true,,535,305,16,16,https://qauto.forstudy.space/api/cars,2120,0,0
+1749466368307,2121,Delete car,200,OK,QA_Hillel_garage 1-8,text,true,,336,332,16,16,https://qauto.forstudy.space/api/cars/364056,2121,0,0
+1749466366065,4366,Create user,201,Created,QA_Hillel_garage 1-10,text,true,,587,381,16,16,https://qauto.forstudy.space/api/auth/signup,4366,0,0
+1749466368953,1482,Get Instruction,200,OK,QA_Hillel_garage 1-14,text,true,,1509,217,16,16,https://qauto.forstudy.space/api/instructions,1482,0,94
+1749466365958,4479,Create user,201,Created,QA_Hillel_garage 1-2,text,true,,587,475,16,16,https://qauto.forstudy.space/api/auth/signup,4479,0,0
+1749466369939,499,Get Instruction,200,OK,QA_Hillel_garage 1-15,text,true,,1509,217,16,16,https://qauto.forstudy.space/api/instructions,499,0,106
+1749466368303,2136,Delete user,200,OK,QA_Hillel_garage 1-7,text,true,,449,328,16,16,https://qauto.forstudy.space/api/users,2136,0,0
+1749466368292,3876,Add Car,201,Created,QA_Hillel_garage 1-1,text,true,,538,387,18,18,https://qauto.forstudy.space/api/cars,3876,0,0
+1749466366854,5316,Create user,201,Created,QA_Hillel_garage 1-3,text,true,,589,477,18,18,https://qauto.forstudy.space/api/auth/signup,5316,0,0
+1749466367220,4952,Create user,201,Created,QA_Hillel_garage 1-11,text,true,,585,381,18,18,https://qauto.forstudy.space/api/auth/signup,4952,0,0
+1749466370940,1238,Get Instruction,200,OK,QA_Hillel_garage 1-16,text,true,,1509,217,18,18,https://qauto.forstudy.space/api/instructions,1238,0,94
+1749466371931,263,Get Instruction,200,OK,QA_Hillel_garage 1-17,text,true,,1509,217,18,18,https://qauto.forstudy.space/api/instructions,263,0,90
+1749466371442,761,Get Instruction,200,OK,QA_Hillel_garage 1-7,text,true,,1509,313,18,18,https://qauto.forstudy.space/api/instructions,761,0,0
+1749466371428,2494,Delete car,200,OK,QA_Hillel_garage 1-9,text,true,,336,334,19,19,https://qauto.forstudy.space/api/cars/364057,2494,0,0
+1749466372944,999,Get Instruction,200,OK,QA_Hillel_garage 1-18,text,true,,1509,217,20,20,https://qauto.forstudy.space/api/instructions,999,0,88
+1749466368284,5658,Create user,201,Created,QA_Hillel_garage 1-4,text,true,,585,481,20,20,https://qauto.forstudy.space/api/auth/signup,5658,0,0
+1749466371430,2513,Delete user,200,OK,QA_Hillel_garage 1-8,text,true,,449,326,20,20,https://qauto.forstudy.space/api/users,2513,0,0
+1749466368303,5640,Create user,201,Created,QA_Hillel_garage 1-5,text,true,,585,479,20,20,https://qauto.forstudy.space/api/auth/signup,5640,0,0
+1749466368283,5661,Create user,201,Created,QA_Hillel_garage 1-12,text,true,,585,381,20,20,https://qauto.forstudy.space/api/auth/signup,5659,0,0
+1749466373170,778,Get current user cars,200,OK,QA_Hillel_garage 1-1,text,true,,535,305,20,20,https://qauto.forstudy.space/api/cars,778,0,0
+1749466371433,2517,Add Car,201,Created,QA_Hillel_garage 1-10,text,true,,538,387,20,20,https://qauto.forstudy.space/api/cars,2517,0,0
+1749466371437,4229,Add Car,201,Created,QA_Hillel_garage 1-2,text,true,,538,387,21,21,https://qauto.forstudy.space/api/cars,4229,0,0
+1749466369711,5961,Create user,201,Created,QA_Hillel_garage 1-6,text,true,,589,477,21,21,https://qauto.forstudy.space/api/auth/signup,5961,0,0
+1749466369680,5994,Create user,201,Created,QA_Hillel_garage 1-13,text,true,,589,381,21,21,https://qauto.forstudy.space/api/auth/signup,5994,0,0
+1749466373946,1731,Get Instruction,200,OK,QA_Hillel_garage 1-19,text,true,,1509,217,21,21,https://qauto.forstudy.space/api/instructions,1731,0,93
+1749466374936,743,Get Instruction,200,OK,QA_Hillel_garage 1-20,text,true,,1509,217,21,21,https://qauto.forstudy.space/api/instructions,743,0,89
+1749466374952,735,Get Instruction,200,OK,QA_Hillel_garage 1-8,text,true,,1509,311,21,21,https://qauto.forstudy.space/api/instructions,734,0,0
+1749466374965,725,Get current user cars,200,OK,QA_Hillel_garage 1-10,text,true,,535,305,21,21,https://qauto.forstudy.space/api/cars,725,0,0
+1749466373173,2517,Add Car,201,Created,QA_Hillel_garage 1-3,text,true,,538,389,21,21,https://qauto.forstudy.space/api/cars,2517,0,0
+1749466374950,754,Delete car,200,OK,QA_Hillel_garage 1-1,text,true,,336,334,21,21,https://qauto.forstudy.space/api/cars/364058,754,0,0
+1749466373175,2530,Add Car,201,Created,QA_Hillel_garage 1-11,text,true,,538,385,21,21,https://qauto.forstudy.space/api/cars,2529,0,0
+1749466374924,788,Delete user,200,OK,QA_Hillel_garage 1-9,text,true,,449,328,21,21,https://qauto.forstudy.space/api/users,788,0,0
+1749466371439,4277,Create user,201,Created,QA_Hillel_garage 1-15,text,true,,587,381,21,21,https://qauto.forstudy.space/api/auth/signup,4277,0,0
+1749466371438,4278,Create user,201,Created,QA_Hillel_garage 1-14,text,true,,587,381,21,21,https://qauto.forstudy.space/api/auth/signup,4278,0,0
+1749466374950,770,Add Car,201,Created,QA_Hillel_garage 1-12,text,true,,538,385,21,21,https://qauto.forstudy.space/api/cars,770,0,0
+1749466374951,773,Add Car,201,Created,QA_Hillel_garage 1-5,text,true,,538,385,21,21,https://qauto.forstudy.space/api/cars,773,0,0
+1749466374950,774,Add Car,201,Created,QA_Hillel_garage 1-4,text,true,,538,385,21,21,https://qauto.forstudy.space/api/cars,774,0,0
+1749466375936,1157,Get Instruction,200,OK,QA_Hillel_garage 1-21,text,true,,1509,217,23,23,https://qauto.forstudy.space/api/instructions,1157,0,88
+1749466376938,855,Get Instruction,200,OK,QA_Hillel_garage 1-22,text,true,,1509,217,23,23,https://qauto.forstudy.space/api/instructions,855,0,90
+1749466376715,1083,Get Instruction,200,OK,QA_Hillel_garage 1-9,text,true,,1509,313,23,23,https://qauto.forstudy.space/api/instructions,1083,0,0
+1749466376669,1135,Get current user cars,200,OK,QA_Hillel_garage 1-2,text,true,,535,305,23,23,https://qauto.forstudy.space/api/cars,1135,0,0
+1749466376692,1121,Get current user cars,200,OK,QA_Hillel_garage 1-3,text,true,,535,307,23,23,https://qauto.forstudy.space/api/cars,1121,0,0
+1749466376707,1106,Get current user cars,200,OK,QA_Hillel_garage 1-11,text,true,,535,303,23,23,https://qauto.forstudy.space/api/cars,1106,0,0
+1749466376691,1125,Delete car,200,OK,QA_Hillel_garage 1-10,text,true,,336,334,23,23,https://qauto.forstudy.space/api/cars/364059,1125,0,0
+1749466376727,1090,Get current user cars,200,OK,QA_Hillel_garage 1-5,text,true,,535,303,23,23,https://qauto.forstudy.space/api/cars,1090,0,0
+1749466376727,1089,Get current user cars,200,OK,QA_Hillel_garage 1-4,text,true,,535,303,23,23,https://qauto.forstudy.space/api/cars,1089,0,0
+1749466376723,1099,Get current user cars,200,OK,QA_Hillel_garage 1-12,text,true,,535,303,23,23,https://qauto.forstudy.space/api/cars,1099,0,0
+1749466373180,4641,Create user,201,Created,QA_Hillel_garage 1-16,text,true,,587,381,23,23,https://qauto.forstudy.space/api/auth/signup,4641,0,0
+1749466373195,4626,Create user,201,Created,QA_Hillel_garage 1-17,text,true,,589,381,23,23,https://qauto.forstudy.space/api/auth/signup,4626,0,0
+1749466373205,4623,Create user,201,Created,QA_Hillel_garage 1-7,text,true,,585,477,23,23,https://qauto.forstudy.space/api/auth/signup,4623,0,0
+1749466376675,1166,Add Car,201,Created,QA_Hillel_garage 1-6,text,true,,538,389,23,23,https://qauto.forstudy.space/api/cars,1166,0,0
+1749466376720,1121,Add Car,201,Created,QA_Hillel_garage 1-15,text,true,,538,387,23,23,https://qauto.forstudy.space/api/cars,1121,0,0
+1749466376708,1133,Delete user,200,OK,QA_Hillel_garage 1-1,text,true,,449,328,23,23,https://qauto.forstudy.space/api/users,1133,0,0
+1749466376676,1505,Add Car,201,Created,QA_Hillel_garage 1-13,text,true,,538,389,24,24,https://qauto.forstudy.space/api/cars,1505,0,0
+1749466376720,1461,Add Car,201,Created,QA_Hillel_garage 1-14,text,true,,538,387,24,24,https://qauto.forstudy.space/api/cars,1461,0,0
+1749466377937,1275,Get Instruction,200,OK,QA_Hillel_garage 1-23,text,true,,1509,217,25,25,https://qauto.forstudy.space/api/instructions,1275,0,90
+1749466378936,285,Get Instruction,200,OK,QA_Hillel_garage 1-24,text,true,,1509,217,25,25,https://qauto.forstudy.space/api/instructions,285,0,93
+1749466378843,402,Get Instruction,200,OK,QA_Hillel_garage 1-1,text,true,,1509,313,25,25,https://qauto.forstudy.space/api/instructions,402,0,0
+1749466378806,1803,Delete car,200,OK,QA_Hillel_garage 1-2,text,true,,336,334,26,26,https://qauto.forstudy.space/api/cars/364060,1803,0,0
+1749466378816,1793,Delete car,200,OK,QA_Hillel_garage 1-11,text,true,,336,332,26,26,https://qauto.forstudy.space/api/cars/364062,1793,0,0
+1749466378815,1794,Delete car,200,OK,QA_Hillel_garage 1-3,text,true,,336,336,26,26,https://qauto.forstudy.space/api/cars/364061,1794,0,0
+1749466378818,1793,Delete car,200,OK,QA_Hillel_garage 1-4,text,true,,336,332,26,26,https://qauto.forstudy.space/api/cars/364065,1793,0,0
+1749466378818,1793,Delete car,200,OK,QA_Hillel_garage 1-5,text,true,,336,332,26,26,https://qauto.forstudy.space/api/cars/364064,1793,0,0
+1749466378825,1792,Delete car,200,OK,QA_Hillel_garage 1-12,text,true,,336,332,26,26,https://qauto.forstudy.space/api/cars/364063,1792,0,0
+1749466378843,1774,Get current user cars,200,OK,QA_Hillel_garage 1-6,text,true,,535,307,26,26,https://qauto.forstudy.space/api/cars,1774,0,0
+1749466378843,1774,Get current user cars,200,OK,QA_Hillel_garage 1-15,text,true,,535,305,26,26,https://qauto.forstudy.space/api/cars,1774,0,0
+1749466379933,688,Get Instruction,200,OK,QA_Hillel_garage 1-25,text,true,,1509,217,26,26,https://qauto.forstudy.space/api/instructions,688,0,93
+1749466374950,5673,Create user,201,Created,QA_Hillel_garage 1-18,text,true,,591,381,26,26,https://qauto.forstudy.space/api/auth/signup,5673,0,0
+1749466379186,1448,Get current user cars,200,OK,QA_Hillel_garage 1-14,text,true,,535,305,26,26,https://qauto.forstudy.space/api/cars,1448,0,0
+1749466376680,3953,Create user,201,Created,QA_Hillel_garage 1-19,text,true,,587,381,26,26,https://qauto.forstudy.space/api/auth/signup,3953,0,0
+1749466379184,1450,Get current user cars,200,OK,QA_Hillel_garage 1-13,text,true,,535,307,26,26,https://qauto.forstudy.space/api/cars,1450,0,0
+1749466376681,3953,Create user,201,Created,QA_Hillel_garage 1-20,text,true,,585,381,26,26,https://qauto.forstudy.space/api/auth/signup,3953,0,0
+1749466378818,1831,Delete user,200,OK,QA_Hillel_garage 1-10,text,true,,449,328,26,26,https://qauto.forstudy.space/api/users,1831,0,0
+1749466378824,3901,Add Car,201,Created,QA_Hillel_garage 1-17,text,true,,538,389,28,28,https://qauto.forstudy.space/api/cars,3901,0,0
+1749466378824,3906,Add Car,201,Created,QA_Hillel_garage 1-16,text,true,,538,387,28,28,https://qauto.forstudy.space/api/cars,3906,0,0
+1749466378833,3897,Add Car,201,Created,QA_Hillel_garage 1-7,text,true,,538,385,28,28,https://qauto.forstudy.space/api/cars,3897,0,0
+1749466376689,6043,Create user,201,Created,QA_Hillel_garage 1-8,text,true,,585,475,28,28,https://qauto.forstudy.space/api/auth/signup,6043,0,0
+1749466380930,1804,Get Instruction,200,OK,QA_Hillel_garage 1-26,text,true,,1509,217,28,28,https://qauto.forstudy.space/api/instructions,1804,0,98
+1749466381938,805,Get Instruction,200,OK,QA_Hillel_garage 1-27,text,true,,1509,217,28,28,https://qauto.forstudy.space/api/instructions,805,0,89
+1749466381651,1109,Get Instruction,200,OK,QA_Hillel_garage 1-10,text,true,,1509,313,28,28,https://qauto.forstudy.space/api/instructions,1109,0,0
+1749466381617,1155,Delete car,200,OK,QA_Hillel_garage 1-6,text,true,,336,336,28,28,https://qauto.forstudy.space/api/cars/364066,1155,0,0
+1749466381618,1155,Delete car,200,OK,QA_Hillel_garage 1-15,text,true,,336,334,28,28,https://qauto.forstudy.space/api/cars/364067,1155,0,0
+1749466381634,1140,Delete car,200,OK,QA_Hillel_garage 1-14,text,true,,336,334,28,28,https://qauto.forstudy.space/api/cars/364069,1140,0,0
+1749466381634,1142,Delete car,200,OK,QA_Hillel_garage 1-13,text,true,,336,336,28,28,https://qauto.forstudy.space/api/cars/364068,1142,0,0
+1749466378097,5044,Create user,201,Created,QA_Hillel_garage 1-21,text,true,,587,381,29,29,https://qauto.forstudy.space/api/auth/signup,5044,0,0
+1749466378794,4347,Create user,201,Created,QA_Hillel_garage 1-22,text,true,,585,381,29,29,https://qauto.forstudy.space/api/auth/signup,4347,0,0
+1749466381610,2548,Delete user,200,OK,QA_Hillel_garage 1-11,text,true,,449,326,30,30,https://qauto.forstudy.space/api/users,2548,0,0
+1749466381611,2547,Delete user,200,OK,QA_Hillel_garage 1-5,text,true,,449,326,30,30,https://qauto.forstudy.space/api/users,2547,0,0
+1749466381617,2541,Delete user,200,OK,QA_Hillel_garage 1-12,text,true,,449,326,30,30,https://qauto.forstudy.space/api/users,2541,0,0
+1749466381610,2549,Delete user,200,OK,QA_Hillel_garage 1-3,text,true,,449,330,30,30,https://qauto.forstudy.space/api/users,2549,0,0
+1749466381612,2546,Delete user,200,OK,QA_Hillel_garage 1-4,text,true,,449,326,30,30,https://qauto.forstudy.space/api/users,2546,0,0
+1749466381613,2545,Delete user,200,OK,QA_Hillel_garage 1-2,text,true,,449,328,30,30,https://qauto.forstudy.space/api/users,2545,0,0
+1749466382934,1230,Get Instruction,200,OK,QA_Hillel_garage 1-28,text,true,,1509,217,24,24,https://qauto.forstudy.space/api/instructions,1230,0,94
+1749466378799,5366,Create user,201,Created,QA_Hillel_garage 1-9,text,true,,585,477,24,24,https://qauto.forstudy.space/api/auth/signup,5366,0,0
+1749466383932,246,Get Instruction,200,OK,QA_Hillel_garage 1-29,text,true,,1509,217,22,22,https://qauto.forstudy.space/api/instructions,246,0,89
+1749466383726,1483,Get current user cars,200,OK,QA_Hillel_garage 1-17,text,true,,535,307,21,21,https://qauto.forstudy.space/api/cars,1483,0,0
+1749466383731,1479,Get current user cars,200,OK,QA_Hillel_garage 1-7,text,true,,535,303,20,20,https://qauto.forstudy.space/api/cars,1479,0,0
+1749466383731,1481,Get current user cars,200,OK,QA_Hillel_garage 1-16,text,true,,535,305,20,20,https://qauto.forstudy.space/api/cars,1481,0,0
+1749466381634,3581,Add Car,201,Created,QA_Hillel_garage 1-20,text,true,,538,385,18,18,https://qauto.forstudy.space/api/cars,3581,0,0
+1749466381626,3589,Add Car,201,Created,QA_Hillel_garage 1-18,text,true,,538,391,18,18,https://qauto.forstudy.space/api/cars,3589,0,0
+1749466381634,3582,Add Car,201,Created,QA_Hillel_garage 1-19,text,true,,538,387,18,18,https://qauto.forstudy.space/api/cars,3582,0,0
+1749466384928,292,Get Instruction,200,OK,QA_Hillel_garage 1-30,text,true,,1509,217,15,15,https://qauto.forstudy.space/api/instructions,292,0,88
+1749466383773,1453,Delete user,200,OK,QA_Hillel_garage 1-6,text,true,,449,330,14,14,https://qauto.forstudy.space/api/users,1453,0,0
+1749466383779,1447,Delete user,200,OK,QA_Hillel_garage 1-13,text,true,,449,330,13,13,https://qauto.forstudy.space/api/users,1447,0,0
+1749466383776,1456,Delete user,200,OK,QA_Hillel_garage 1-15,text,true,,449,328,12,12,https://qauto.forstudy.space/api/users,1455,0,0
+1749466380247,4987,Create user,201,Created,QA_Hillel_garage 1-1,text,true,,589,477,11,11,https://qauto.forstudy.space/api/auth/signup,4987,0,0
+1749466383775,1459,Delete user,200,OK,QA_Hillel_garage 1-14,text,true,,449,328,10,10,https://qauto.forstudy.space/api/users,1458,0,0
+1749466380213,5024,Create user,201,Created,QA_Hillel_garage 1-23,text,true,,591,381,9,9,https://qauto.forstudy.space/api/auth/signup,5024,0,0
+1749466380224,5018,Create user,201,Created,QA_Hillel_garage 1-24,text,true,,589,381,8,8,https://qauto.forstudy.space/api/auth/signup,5018,0,0
+1749466383734,1511,Add Car,201,Created,QA_Hillel_garage 1-8,text,true,,538,385,7,7,https://qauto.forstudy.space/api/cars,1511,0,0
+1749466384143,1109,Add Car,201,Created,QA_Hillel_garage 1-22,text,true,,538,385,6,6,https://qauto.forstudy.space/api/cars,1109,0,0
+1749466384143,1110,Add Car,201,Created,QA_Hillel_garage 1-21,text,true,,538,387,6,6,https://qauto.forstudy.space/api/cars,1110,0,0
+1749466383737,2875,Create user,201,Created,QA_Hillel_garage 1-26,text,true,,585,381,4,4,https://qauto.forstudy.space/api/auth/signup,2875,0,0
+1749466383763,2853,Create user,201,Created,QA_Hillel_garage 1-10,text,true,,589,477,3,3,https://qauto.forstudy.space/api/auth/signup,2853,0,0
+1749466383745,2871,Create user,201,Created,QA_Hillel_garage 1-27,text,true,,589,381,3,3,https://qauto.forstudy.space/api/auth/signup,2871,0,0
+1749466381622,4994,Create user,201,Created,QA_Hillel_garage 1-25,text,true,,593,381,3,3,https://qauto.forstudy.space/api/auth/signup,4994,0,0
