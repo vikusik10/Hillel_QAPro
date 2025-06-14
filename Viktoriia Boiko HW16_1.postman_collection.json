@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "2778d48a-d87c-4df6-ad2e-61ec10eae521",
+		"name": "Viktoriia Boiko HW16_1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29256000",
+		"_collection_link": "https://qa0000-9575.postman.co/workspace/QA-Pro-Hillel~44b5992d-5886-43e7-a6a6-7005d56b5266/collection/29256000-2778d48a-d87c-4df6-ad2e-61ec10eae521?action=share&source=collection_link&creator=29256000"
+	},
+	"item": [
+		{
+			"name": "Get All Cities",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"pm.test(\"Check city id\", function () {\r",
+							"    pm.expect(jsonData.data.getAllCities[0].id).to.eql(\"23\")\r",
+							"})\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response contains cities\", function () {\r",
+							"  pm.expect(jsonData.data.getAllCities.length).to.be.above(0);\r",
+							"});\r",
+							"\r",
+							"const cities = jsonData.data.getAllCities;\r",
+							"const shuffled = cities.sort(() => 0.5 - Math.random());\r",
+							"const randomCities = shuffled.slice(0, 4);\r",
+							"const randomIds = randomCities.map(city => city.id);\r",
+							"\r",
+							"pm.collectionVariables.set(\"cityIds\", JSON.stringify(randomIds));\r",
+							"\r",
+							"const totalSquare = cities.reduce((sum, city) => sum + city.square, 0);\r",
+							"const avgSquare = totalSquare / cities.length;\r",
+							"pm.collectionVariables.set(\"avgSquare\", avgSquare);\r",
+							"\r",
+							"const sortedIds = randomIds.sort((a, b) => a - b);\r",
+							"pm.collectionVariables.set(\"minId\", sortedIds[0]);\r",
+							"pm.collectionVariables.set(\"maxId\", sortedIds[3]);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n    getAllCities{\r\n        ... CityDetails\r\n    }\r\n}\r\n\r\nfragment CityDetails on CityAbstract {\r\n    id \r\n    name\r\n    square\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cities Description",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const ids = JSON.parse(pm.collectionVariables.get(\"cityIds\"));\r",
+							"pm.collectionVariables.set(\"cityId1\", ids[0]);\r",
+							"pm.collectionVariables.set(\"cityId2\", ids[1]);\r",
+							"pm.collectionVariables.set(\"cityId3\", ids[2]);\r",
+							"pm.collectionVariables.set(\"cityId4\", ids[3]);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const result = pm.response.json();\r",
+							"pm.test(\"All descriptions exist\", () => {\r",
+							"  pm.expect(result.data.getCityById.description).to.be.a('string');\r",
+							"  pm.expect(result.data.getCity2.description).to.be.a('string');\r",
+							"  pm.expect(result.data.getCity3.description).to.be.a('string');\r",
+							"  pm.expect(result.data.getCity4.description).to.be.a('string');\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n     getCityById(id: {{cityId1}}) {\r\n        ... CityDetails}\r\n        getCity2: getCityById(id: {{cityId2}}) {... CityDetails}\r\n        getCity3: getCityById(id: {{cityId3}}) {... CityDetails}\r\n        getCity4: getCityById(id: {{cityId4}}) {... CityDetails}\r\n}\r\nfragment CityDetails on CityAbstract {\r\n    id \r\n    name\r\n    ... on City {description}\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Range by id",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// $minId: Int!=1, $maxId: Int!=25\r",
+							"const minId = parseInt(pm.collectionVariables.get(\"minId\"))\r",
+							"const maxId = parseInt(pm.collectionVariables.get(\"maxId\"))\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const result = pm.response.json().data.getCityByRangeId;\r",
+							"\r",
+							"\r",
+							"pm.test(\"City IDs within expected range\", () => {\r",
+							"  var min = parseInt(pm.collectionVariables.get(\"minId\"));\r",
+							"  var max = parseInt(pm.collectionVariables.get(\"maxId\"));\r",
+							"  result.forEach(city => {\r",
+							"    pm.expect(city.id).to.be.within(min, max);\r",
+							"  });\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query GetCityByRangeId {\r\n    getCityByRangeId(filter:{\r\n    minId:{{minId}}, maxId:{{maxId}} }) {\r\n        id\r\n        name\r\n        square\r\n    }\r\n}\r\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add City",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const names = [\"Pyriatyn\", \"Trypilska\", \"Zelenivka\", \"Svitlohorod\"];\r",
+							"const randomName = names[Math.floor(Math.random() * names.length)];\r",
+							"pm.collectionVariables.set(\"randomCityName\", randomName);\r",
+							"const avgSquare = pm.collectionVariables.get(\"avgSquare\")"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"City created successfully\", () => {\r",
+							"  const city = pm.response.json().data.addCity;\r",
+							"  pm.expect(city.name).to.eql(pm.collectionVariables.get(\"randomCityName\"));\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation AddCity {\r\n    addCity(name: \"{{randomCityName}}\",\r\n     square: {{avgSquare}}, \r\n     description: \"Created new city\") {\r\n        id\r\n        name\r\n        square\r\n    }\r\n}\r\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://graphql-ukrainian-cities.hillel.it/graphql",
+			"type": "string"
+		},
+		{
+			"key": "minId",
+			"value": "1",
+			"type": "string"
+		},
+		{
+			"key": "maxId",
+			"value": "25",
+			"type": "string"
+		},
+		{
+			"key": "cityIds",
+			"value": ""
+		},
+		{
+			"key": "avgSquare",
+			"value": ""
+		},
+		{
+			"key": "randomCityName",
+			"value": ""
+		},
+		{
+			"key": "cityId1",
+			"value": ""
+		},
+		{
+			"key": "cityId2",
+			"value": ""
+		},
+		{
+			"key": "cityId3",
+			"value": ""
+		},
+		{
+			"key": "cityId4",
+			"value": ""
+		}
+	]
+}
